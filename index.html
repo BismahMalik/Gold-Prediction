@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gold Price Prediction</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-brand" href="#">
+        <h4>GoldPredictor</h4>
+      </a>
+    </nav>
+    <section class="Video">
+      <div class="container">
+        <h1>
+          Unlock the Future of Wealth with GoldPredictor - Your Ultimate Gold
+          Investment Companion!
+        </h1>
+        <p>
+          Dive into the world of financial foresight with GoldPredictor, your
+          go-to app for precise gold predictions and investment strategies.
+          Harness the power of cutting-edge algorithms and real-time market
+          analysis to make informed decisions in the ever-evolving gold market.
+        </p>
+      </div>
+    </section>
+    <div id="predictionCard">
+      <h1>Gold Price Prediction</h1>
+      <form id="predictionForm">
+        <label for="inputFeatures">Input Features:</label>
+        <input
+          type="text"
+          id="inputFeatures"
+          placeholder="Enter SPX, USO, SLV, EUR/USD"
+          required
+        />
+        <button id="btn" type="submit">Predict</button>
+      </form>
+      <div id="predictionResult"></div>
+    </div>
+    <section class="ending-section">
+      <div class="container">
+        <article class="article">
+          <h3>COMPANY</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
+            aliquid ullam quo eveniet voluptatibus, quos enim necessitatibus
+            esse consequatur, mollitia officia voluptates blanditiis soluta
+            debitis fuga consequuntur est ipsam quasi!
+          </p>
+          <div class="icon-text-container">
+            <img
+              src="{{ url_for('static', filename='images/location.png') }}"
+            />
+            <p>420 Love Street 133/2 Mirpur City, Dhaka</p>
+          </div>
+          <div class="icon-text-container">
+            <img
+              src="{{ url_for('static', filename='images/phone-call.png') }}"
+            />
+            <p>+(066) 19 5017 800 628</p>
+          </div>
+          <div class="icon-text-container">
+            <img src="{{ url_for('static', filename='images/mail.png') }}" />
+            <p>info.contact@gmail.com</p>
+          </div>
+        </article>
+        <article id="news-article" class="article">
+          <h3>NEWSFEED</h3>
+          <div class="article-container">
+            <article class="news">
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/user.png') }}"
+                />
+                <p>By Admin</p>
+              </div>
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/calender.png') }}"
+                />
+                <p>March 9,2020</p>
+              </div>
+            </article>
+            <hr />
+          </div>
+
+          <div class="article-container">
+            <article class="news">
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/user.png') }}"
+                />
+                <p>By Admin</p>
+              </div>
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/calender.png') }}"
+                />
+                <p>March 9,2020</p>
+              </div>
+            </article>
+            <hr />
+          </div>
+          <div class="article-container">
+            <article class="news">
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/user.png') }}"
+                />
+                <p>By Admin</p>
+              </div>
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/calender.png') }}"
+                />
+                <p>March 9,2020</p>
+              </div>
+            </article>
+            <hr />
+          </div>
+          <div class="article-container">
+            <article class="news">
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/user.png') }}"
+                />
+                <p>By Admin</p>
+              </div>
+              <div class="icon-text-container">
+                <img
+                  src="{{ url_for('static', filename='images/calender.png') }}"
+                />
+                <p>March 9,2020</p>
+              </div>
+            </article>
+            <hr />
+          </div>
+        </article>
+        <article class="article">
+          <h3>NEWSLETTER</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <div id="your-mail" class="row">
+            <div class="col-md-6">
+              <input
+                id="mail"
+                type="text"
+                placeholder="Your Mail"
+                class="form-control"
+              />
+            </div>
+            <div class="col-md-6">
+              <button id="last-sub" type="submit" class="btn btn-primary">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy;2023. Copy Right by Bismah Malik. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>
